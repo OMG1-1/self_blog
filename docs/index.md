@@ -66,5 +66,33 @@
 - [日总结](chapter01_daily_summary/index.md)
 - [周总结](chapter02_weekly_summary/index.md)
 - [季总结](chapter03_quarterly_summary/index.md)
-- [年总结](chapter04_yearly_summary/index.md)
+- [年总结](chapter04_annual_summary/index.md)
 - [关于我](preface/about_me.md)
+
+## mkdocs 扩展功能
+
+### admonition
+
+!!! think "think"
+
+    think admonition
+
+!!! grow "grow"
+
+    grow admonition
+
+!!! review "review"
+
+    review admonition
+
+!!! analysis "analysis"
+
+    analysis admonition
+
+!!! plan "plan"
+
+    plan admonition
+
+!!! summary "summary"
+
+    summary admonition

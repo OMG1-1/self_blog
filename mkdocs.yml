@@ -6,9 +6,9 @@ site_author: kouzhenyang
 docs_dir: docs
 site_dir: site
 # Repository
-repo_name: OMG1-1/kouzhenyang_self_blog
-repo_url: https://github.com/OMG1-1/kouzhenyang_self_blog
-edit_uri: https://github.com/OMG1-1/kouzhenyang_self_blog/tree/main/docs/
+repo_name: OMG1-1/self_blog
+repo_url: https://github.com/OMG1-1/self_blog
+edit_uri: https://github.com/OMG1-1/self_blog/tree/main/docs/
 
 # Copyright
 copyright: Copyright &copy; 2023 Kobe
@@ -126,6 +126,7 @@ markdown_extensions:
 
 extra_javascript:
   - javascripts/mathjax.js
+  - javascripts/extra.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   # - javascripts/katex.js
@@ -141,6 +142,18 @@ nav:
   - 关于:
       # [icon: material/book-open-outline]
       - 关于我: preface/about_me.md
+  - 时间管理:
+      # [icon: material/calendar-today]
+      - time_management/index.md
+      - 时间管理理论: time_management/theory.md
+      # 收集、整理、归纳
+      - 时间管理流程: time_management/process.md
+      # 日历、清单、笔记
+      - 时间管理工具: time_management/tools.md
+      # 时间弹性的--清单 时间具体的--任务 时间管理的--计划
+      - 时间管理方法: time_management/methods.md
+      # 日、周、月、季度、年
+      - 时间管理视角: time_management/perspective.md
   - 每日总结:
       # [icon: material/calculator-variant-outline]
       - chapter01_daily_summary/index.md
