@@ -1,0 +1,167 @@
+# Project information
+site_name: life is short
+site_description: 人生短暂，快乐不长久
+site_url:
+site_author: kouzhenyang
+docs_dir: docs
+site_dir: site
+# Repository
+repo_name: OMG1-1/kouzhenyang_self_blog
+repo_url: https://github.com/OMG1-1/kouzhenyang_self_blog
+edit_uri: https://github.com/OMG1-1/kouzhenyang_self_blog/tree/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2023 Kobe
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+  features:
+    # - announce.dismiss
+    - content.action.edit
+    # - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    # - navigation.prune
+    # - navigation.sections
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: white
+      # accent: indigo
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to dark mode
+    - scheme: slate
+      primary: grey
+      # accent: indigo
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to light mode
+  font:
+    text: Noto Sans SC
+    code: Fira Code
+  favicon: assets/images/favicon.ico
+  logo: assets/images/logo.png
+  icon:
+    logo: logo
+    repo: fontawesome/brands/github
+    edit: material/file-edit-outline
+    annotation: material/leaf-circle
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/OMG1-1
+    # - icon: fontawesome/brands/linkedin
+    #   link: https://www.linkedin.com/in/kouzhenyang/
+    # - icon: fontawesome/solid/code
+    #   link: https://leetcode.cn/u/jyd/
+  generator: false
+  status:
+    new: 最近添加
+
+# Plugins
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: datetime
+      #fallback_to_build_date: true
+      enable_creation_date: true
+      timezone: Asia/Shanghai
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  # - pymdownx.magiclink:
+  #     repo_url_shorthand: true
+  #     user: squidfunk
+  #     repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - javascripts/katex.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+extra_css:
+  - stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+# Page tree
+nav:
+  - 关于:
+      # [icon: material/book-open-outline]
+      - 关于我: preface/about_me.md
+  - 每日总结:
+      # [icon: material/calculator-variant-outline]
+      - chapter01_daily_summary/index.md
+      - 2023年11月: chapter01_daily_summary/2023_11.md
+      - 2023年12月: chapter01_daily_summary/2023_12.md
+  - 每周总结:
+      # [icon: material/timer-sand]
+      - chapter02_weekly_summary/index.md
+      - 2023年11月: chapter02_weekly_summary/2023_11.md
+      - 2023年12月: chapter02_weekly_summary/2023_12.md
+  - 季度总结:
+      # [icon: material/shape-outline]
+      - chapter03_quarterly_summary/index.md
+      - 2023年: chapter03_quarterly_summary/2023.md
+      - 2024年: chapter03_quarterly_summary/2024.md
+      - 2025年: chapter03_quarterly_summary/2025.md
+      - 2026年: chapter03_quarterly_summary/2026.md
+  - 年度总结:
+      # [icon: material/shape-outline]
+      - chapter04_annual_summary/index.md
+      - 2023年 - 2026年: chapter04_annual_summary/2023_2026.md
+  - 慢慢成长:
+      # [icon: material/account-group-outline]
+      - slowly_growing/index.md
