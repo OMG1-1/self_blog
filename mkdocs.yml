@@ -123,6 +123,10 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  # 自动解释-引用
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
 
 extra_javascript:
   - javascripts/mathjax.js
