@@ -726,6 +726,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#1215" class="md-nav__link">
+    12.15
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1247,6 +1254,13 @@
         <li class="md-nav__item">
   <a href="#1214" class="md-nav__link">
     12.14
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1215" class="md-nav__link">
+    12.15
   </a>
   
 </li>
@@ -2254,6 +2268,134 @@
 </div>
 </div>
 </div>
+<h2 id="1215">12.15<a class="headerlink" href="#1215" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="15:2"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><input id="__tabbed_15_2" name="__tabbed_15" type="radio" /><div class="tabbed-labels"><label for="__tabbed_15_1">work</label><label for="__tabbed_15_2">study</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition note">
+<p class="admonition-title">工作内容</p>
+<ul>
+<li>主数据维护<ul>
+<li>同一管线下的管段设计容量最大值变更时同步修改管线运输能力
+    可能发生管段设计容量最大值变更的情况：<ol>
+<li>管段状态改变时</li>
+<li>修改管段所属管线时</li>
+<li>新增管段时</li>
+</ol>
+</li>
+<li>优化管段主数据批量修改价格和里程信息方法</li>
+</ul>
+</li>
+<li>价格中心<ul>
+<li>价格影响范围刷新表同一版本价格或里程有多条记录引起的tooMuchRecords异常处理</li>
+<li>修改查询适用资产接口<ul>
+<li>根据基础价格版本区分适用资产版本，管段里程版本为创建基础价格时商品管段表中的里程版本</li>
+<li>基础价格初始化接口调整，添加对管段价格新增时的管段里程数据补充</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition grow">
+<p class="admonition-title">工作收获</p>
+<ul>
+<li>无</li>
+</ul>
+</div>
+<div class="admonition think">
+<p class="admonition-title">工作反思</p>
+<ul>
+<li>对于业务没有100%把握的情况下，第一时间先向上反馈，随后记录进详设或文档作为留痕，避免后续的工作中出现问题。</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition note">
+<p class="admonition-title">学习内容</p>
+<ul>
+<li>
+<p>英语</p>
+<ul>
+<li>形容人物细节学习</li>
+</ul>
+</li>
+<li>
+<p>算法</p>
+<ul>
+<li>
+<p>二叉树遍历：</p>
+<ul>
+<li>「DFS Depth First Search」：前序遍历「PreOrder」、中序遍历「InOrder」、后序遍历「PostOrder」</li>
+<li>「BFS Breadth First Search」：层次遍历「LevelOrder」</li>
+</ul>
+</li>
+<li>
+<p>二叉树的数组表示</p>
+<p>优点：</p>
+<ul>
+<li>数组存储在连续的内存空间中，对缓存友好，访问与遍历速度较快。</li>
+<li>不需要存储指针，比较节省空间。</li>
+<li>允许随机访问节点。</li>
+</ul>
+<p>局限性：</p>
+<ul>
+<li>数组存储需要连续内存空间，因此不适合存储数据量过大的树。</li>
+<li>增删节点需要通过数组插入与删除操作实现，效率较低。</li>
+<li>当二叉树中存在大量 None 时，数组中包含的节点数据比重较低，空间利用率较低。</li>
+</ul>
+</li>
+<li>
+<p>「二叉搜索树 binary search tree」</p>
+<p>二叉搜索树满足以下条件：</p>
+<ol>
+<li>对于根节点，左子树中所有节点的值 &lt; 根节点的值 &lt; 右子树中所有节点的值。</li>
+<li>任意节点的左、右子树也是二叉搜索树，即同样满足条件 <code>1.</code> 。</li>
+</ol>
+<p>使用场景：</p>
+<ul>
+<li>用作系统中的多级索引，实现高效的查找、插入、删除操作。</li>
+<li>作为某些搜索算法的底层数据结构。</li>
+<li>用于存储数据流，以保持其有序状态。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition grow">
+<p class="admonition-title">学习收获</p>
+<ul>
+<li>温故了二叉树的相关知识</li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">学习问题</p>
+<ul>
+<li>写不出来根据分组数据进行批量组更新SQL</li>
+</ul>
+</div>
+<div class="admonition think">
+<p class="admonition-title">学习反思</p>
+<p>对于以分组为维度批量更新的sql还是写不出来，网上的资料查看时了解到的窗口函数也完全看不懂，需要琢磨琢磨，写个例子运用下。</p>
+<ul>
+<li>算法：发现看着很简单，但是不实际运行代码，还是会和自己认为的运行过程和情况有很大偏差，后面学习debug代码是很有必要的。</li>
+<li>英语：keep going，继续学习</li>
+<li>JAVA：SpringBoot基础不用再过多去看了，可以将重心放在缓存、事务管理、Aware等中级技术上。</li>
+</ul>
+</div>
+<div class="admonition plan">
+<p class="admonition-title">明日任务</p>
+<ul>
+<li>整理SpringBoot（缓存 + 事务管理 + Aware + ResourceView）</li>
+<li>MapReduce案例练习</li>
+<li>yarn学习</li>
+<li>大数据笔记补充（记录自己的学习过程）</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 
 <!-- Source file information -->
 
@@ -2262,7 +2404,7 @@
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 15, 2023 00:41:13</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 16, 2023 00:42:30</span>
       
         <br>
         创建日期:
